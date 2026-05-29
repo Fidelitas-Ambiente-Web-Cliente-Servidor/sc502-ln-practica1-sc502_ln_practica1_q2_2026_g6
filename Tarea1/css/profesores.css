@@ -1,6 +1,34 @@
 body {
     background-color: silver;
 }
+/*  NAVBAR  */
+
+#mainNav {
+  background-color: #0b1a2e;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+#mainNav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.25s ease;
+  position: relative;
+}
+
+#mainNav .nav-link:hover {
+  color: #fff;
+}
+
+#mainNav .nav-link.active {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* FIN ESTILOS NAVBAR  */
+
 
 #encabezado-profesores {
     color: navy;
@@ -40,6 +68,11 @@ body {
     margin: 10px;
 }
 
-footer {
-    margin: 30px;
+/* ESTILOS PARA EL FOOTER */
+.footer-section {
+  padding: 1.5rem 0;
+  background-color: #07121f;
+  color: #fff;
+  text-align: center;
 }
+/* FIN ESTILOS PARA EL FOOTER */
