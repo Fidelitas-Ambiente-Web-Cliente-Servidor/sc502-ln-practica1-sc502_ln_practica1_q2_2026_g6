@@ -1,4 +1,4 @@
-/*  VARIABLES DE COLORES  */
+/*  VARIABLES DE  */
 :root {
   --primary: #0d6efd;
   --primary-dark: #0b5ed7;
@@ -121,6 +121,61 @@ small {
   text-align: center;
 }
 
+
+/*  BOTÓN PERSONALIZADO  */
+
+.btn-custom {
+  display: inline-block;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.65rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-custom:hover {
+  background-color: var(--primary-dark);
+  color: #fff;
+}
+
+/*  CURSOS DESTACADOS  */
+
+.section-cursos {
+  padding: 3rem 0;
+}
+
+.section-cursos .card {
+  height: 100%;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.section-cursos .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+.section-cursos .card-title {
+  margin-bottom: 0.5rem;
+}
+
+.section-cursos .card-text {
+  flex: 1;
+  margin-bottom: 1rem;
+  color: #495057;
+}
+
+.section-cursos .btn-custom {
+  align-self: flex-start;
+}
 
 
 /*  FOOTER  */
