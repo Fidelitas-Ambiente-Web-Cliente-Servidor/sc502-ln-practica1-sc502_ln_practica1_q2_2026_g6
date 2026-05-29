@@ -1,0 +1,45 @@
+body {
+    background-color: silver;
+}
+
+#encabezado-profesores {
+    color: navy;
+    font-size: 20px;
+    margin: 30px;
+}
+
+.profesor {
+    border: 2px solid gray;
+    padding: 15px;
+    margin: 15px;
+}
+
+.profesor img {
+    width: 100%;
+    height: 200px;
+}
+
+#profesores {
+    margin: 30px;
+}
+
+
+#mision-vision {
+    margin: 30px;
+}
+
+.mision {
+    border: 2px solid navy;
+    padding: 20px;
+    margin: 10px;
+}
+
+.vision {
+    border: 2px solid navy;
+    padding: 20px;
+    margin: 10px;
+}
+
+footer {
+    margin: 30px;
+}
