@@ -3,10 +3,10 @@
 body {
     background-color: silver;
 }
-/*  NAVBAR  */
 
+/*  NAVBAR  */
 #mainNav {
-  background-color: #0b1a2e;
+  background-color: var(--navbar-bg);
 }
 
 #mainNav .navbar-brand {
@@ -21,7 +21,7 @@ body {
 }
 
 #mainNav .nav-link:hover {
-  color: #fff;
+  color: var(--navbar-hover);
 }
 
 #mainNav .nav-link.active {
@@ -29,11 +29,15 @@ body {
   font-weight: 600;
 }
 
+.navbar-brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
 /* FIN ESTILOS NAVBAR  */
 
-
 #encabezado-profesores {
-    color: navy;
+    color: var(--primary-dark);
     font-size: 20px;
     margin: 30px;
 }
@@ -42,6 +46,7 @@ body {
     border: 2px solid gray;
     padding: 15px;
     margin: 15px;
+    background-color: #fff;
 }
 
 .profesor img {
@@ -53,28 +58,28 @@ body {
     margin: 30px;
 }
 
-
 #mision-vision {
     margin: 30px;
 }
 
 .mision {
-    border: 2px solid navy;
+    border: 2px solid var(--primary-dark);
     padding: 20px;
     margin: 10px;
+    background-color: #fff;
 }
 
 .vision {
-    border: 2px solid navy;
+    border: 2px solid var(--primary-dark);
     padding: 20px;
     margin: 10px;
+    background-color: #fff;
 }
 
-/* ESTILOS PARA EL FOOTER */
+/* FOOTER */
 .footer-section {
-  padding: 1.5rem 0;
-  background-color: #07121f;
-  color: #fff;
-  text-align: center;
+    padding: 1.5rem 0;
+    background-color: var(--footer-bg);
+    color: #fff;
+    text-align: center;
 }
-/* FIN ESTILOS PARA EL FOOTER */
