@@ -84,7 +84,7 @@ small {
 
 /*  HERO  */
 
-.hero {
+#hero {
   min-height: 92vh;
   display: flex;
   align-items: center;
@@ -95,11 +95,11 @@ small {
     url("https://images.unsplash.com/photo-1523050854058-8df90110c7f1?w=1920&h=1080&fit=crop") center / cover no-repeat;
 }
 
-.hero h1 {
+#hero h1 {
   font-size: 3.5rem;
 }
 
-.hero p {
+#hero p {
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
   max-width: 600px;
@@ -107,7 +107,7 @@ small {
   margin-right: auto;
 }
 
-.hero > .container > a {
+#hero > .container > a {
   display: inline-block;
   background-color: var(--primary);
   color: #fff;
@@ -200,6 +200,35 @@ small {
 
 .stat-item p {
   font-size: 1.15rem;
+}
+
+/*  TESTIMONIOS  */
+
+.section-testimonios {
+  padding: 3rem 0;
+}
+
+.testimonial-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  height: 100%;
+  background: #f8f9fa;
+  border-left: 4px solid var(--primary);
+}
+
+.testimonial-card img {
+  flex-shrink: 0;
+}
+
+.testimonial-card small {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  line-height: 1.6;
 }
 
 /*  FOOTER  */
