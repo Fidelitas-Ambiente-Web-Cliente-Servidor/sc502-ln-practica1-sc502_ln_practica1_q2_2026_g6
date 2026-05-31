@@ -1,9 +1,19 @@
 @import "./style.css";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TIPOGRAFÍA */
+
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     color: #212529;
 }
+
+/* NAVBAR */
 
 #mainNav {
     background-color: var(--navbar-bg);
@@ -28,6 +38,8 @@ body {
     border-radius: 50%;
 }
 
+/* ENCABEZADO */
+
 .page-header {
     background-color: var(--stats-bg);
     color: white;
@@ -35,8 +47,28 @@ body {
     padding: 60px 0;
 }
 
+.page-header h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* BUSCADOR */
+
+.form-control {
+    border: 1px solid var(--primary);
+}
+
+/* CURSOS */
+
+h2 {
+    color: var(--navbar-bg);
+    font-weight: 700;
+}
+
 .course-card {
     height: 100%;
+    border: 1px solid #ddd;
 }
 
 .course-card img {
@@ -44,10 +76,17 @@ body {
     object-fit: cover;
 }
 
-.price {
-    font-weight: bold;
+.course-card h5 {
     color: var(--primary);
+    font-weight: 600;
 }
+
+.price {
+    color: var(--primary-dark);
+    font-weight: bold;
+}
+
+/* FOOTER */
 
 .footer-section {
     background-color: var(--footer-bg);
