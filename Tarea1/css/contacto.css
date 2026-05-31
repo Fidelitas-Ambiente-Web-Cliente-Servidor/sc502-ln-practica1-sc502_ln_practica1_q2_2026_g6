@@ -235,35 +235,12 @@ body {
 
 /* --- FOOTER --- */
 .footer-section {
-  padding: 2.25rem 0;
+  padding: 1.5rem 0;
   background-color: var(--footer-bg);
   color: #fff;
   text-align: center;
 }
 
-.footer-section p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
-}
-
 #social {
-  margin-bottom: 1.25rem;
-}
-
-#social a {
-  display: inline-block;
-  margin: 0 12px;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-  opacity: 0.85;
-}
-
-#social a:hover {
-  transform: translateY(-3px);
-  opacity: 1;
-}
-
-/* Convierte iconos negros en blanco */
-#social img {
-  filter: brightness(0) invert(1);
+  padding: 1rem 0 2rem 0;
 }
