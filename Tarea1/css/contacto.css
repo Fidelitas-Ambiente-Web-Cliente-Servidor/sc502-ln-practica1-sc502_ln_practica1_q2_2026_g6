@@ -159,6 +159,15 @@ body {
   outline: none;
 }
 
+.contacto-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.65;
+  box-shadow: none;
+  transform: none;
+}
+
+
 .contacto-btn:hover {
   background-color: var(--primary-dark);
 }

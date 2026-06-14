@@ -53,30 +53,37 @@
               <div class="contacto-form-group">
                 <label for="nombre">Nombre Completo</label>
                 <input type="text" class="contacto-input" id="nombre" placeholder="Tu nombre completo" required>
+                <span id="errorNombre" class="error-message" style="color: red; font-size: 0.85rem; display: block; margin: top 5px;"></span>
               </div>
+              
+              
               
               <div class="contacto-form-group">
                 <label for="correo">Correo Electrónico</label>
                 <input type="email" class="contacto-input" id="correo" placeholder="correo@ejemplo.com" required>
+                <span id="errorCorreo" class="error-message" style="color: red; font-size: 0.85rem; display: block; margin: top 5px;"></span>
               </div>
               
               <div class="contacto-form-group">
                 <label for="telefono">Teléfono</label>
                 <input type="tel" class="contacto-input" id="telefono" placeholder="+506 8888-8888" required>
+                <span id="errorTelefono" class="error-message" style="color: red; font-size: 0.85rem; display: block; margin: top 5px;"></span>
               </div>
               
               <div class="contacto-form-group">
                 <label for="asunto">Asunto</label>
                 <input type="text" class="contacto-input" id="asunto" placeholder="Motivo de tu consulta" required>
+                <span id="errorAsunto" class="error-message" style="color: red; font-size: 0.85rem; display: block; margin: top 5px;"></span>
               </div>
               
               <div class="contacto-form-group">
                 <label for="mensaje">Mensaje</label>
                 <textarea class="contacto-input contacto-textarea" id="mensaje" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
+                <span id="errorMensaje" class="error-message" style="color: red; font-size: 0.85rem; display: block; margin: top 5px;"></span>
               </div>
               
               <div class="contacto-btn-container">
-                <button type="submit" class="contacto-btn">Enviar Mensaje</button>
+                <button type="submit" class="contacto-btn" id="btnEnviar" disabled>Enviar Mensaje</button>
               </div>
             </form>
           </div>
@@ -156,6 +163,10 @@
 
   <!-- SCRIPTS -->
   <script src="./js/bootstrap.bundle.min.js"></script>
-  
+
+  <!-- ENLACE AL ARCHIVO JS -->
+  <script src="./js/contacto.js"></script>
+
+
 </body>
 </html>
