@@ -102,7 +102,7 @@ body {
     height: 350px;
 }
 
-#cerrarModal {
+#btncerrarModal {
     font-size: 30px;
     float: right;
     cursor: pointer;

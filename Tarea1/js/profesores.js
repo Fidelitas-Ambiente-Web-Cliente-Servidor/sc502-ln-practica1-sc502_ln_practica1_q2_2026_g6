@@ -1,3 +1,4 @@
+// Arreglo para almacenar a información de los profesores
 let profesores = [
     {
         nombre: "Leonardo Moscoa",
@@ -33,17 +34,25 @@ let profesores = [
     }
 ];
 
+// Evento que se va a ejectuar al cargar la sección de profesores en la página
 document.addEventListener("DOMContentLoaded", function () {
+
+    //Indica el contenedor donde muestra la información de los profesores
     let listaProfesores = document.getElementById("listaProfesores");
 
+    // Recorre el arreglo con la información de cada profesor
     for (let i = 0; i < profesores.length; i++) {
+
+        // Crea una columna con elementos de bootsrap
         let columna = document.createElement("div");
         columna.className = "col-md-6 col-lg-4";
 
+        // Crea la tarjeta según el profesor seleccionado
         let tarjeta = document.createElement("div");
         tarjeta.className = "profesor";
         tarjeta.dataset.profesor = i;
 
+        // Agrega el contenido de la tarjeta en HTML
         tarjeta.innerHTML = `
             <img src="${profesores[i].foto}" alt="${profesores[i].nombre}">
             <h2>${profesores[i].nombre}</h2>
@@ -51,22 +60,29 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>${profesores[i].descripcion}</p>
         `;
 
+        // Evento para abrir el modal al tocar una tarjeta
         tarjeta.addEventListener("click", function () {
             let idProfesor = tarjeta.dataset.profesor;
             abrirModal(idProfesor);
         });
 
+        // Agrega la tarjeta en la columna
         columna.appendChild(tarjeta);
+
+        // Agrega la columna al contenedor
         listaProfesores.appendChild(columna);
     }
 
-    let cerrarModal = document.getElementById("cerrarModal");
+    // Asigna elementos para cerrar el modal
+    let btncerrarModal = document.getElementById("btncerrarModal");
     let modalProfesor = document.getElementById("modalProfesor");
 
-    cerrarModal.addEventListener("click", function () {
+    // Evento para cerrar el modal orpimiendo la X 
+    btncerrarModal.addEventListener("click", function () {
         modalProfesor.style.display = "none";
     });
 
+    // Evento para cerrar el modal al oprimir fuera del contenido
     modalProfesor.addEventListener("click", function (event) {
         if (event.target == modalProfesor) {
             modalProfesor.style.display = "none";
@@ -74,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Función para obtener el id del profesor seleccionado, cargando y mostrando la información en el modal. 
 function abrirModal(idProfesor) {
     let profesor = profesores[idProfesor];
 
