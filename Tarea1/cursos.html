@@ -43,124 +43,70 @@
 
 <!-- ========== BUSCADOR ========== -->
 <section class="container my-4">
-    <input type="text" class="form-control" placeholder="Buscar cursos...">
+    <input
+        type="text"
+        id="busquedaCurso"
+        class="form-control"
+        placeholder="Buscar cursos..."
+    >
 </section>
 
-<!-- ========== DESARROLLO WEB ========== -->
+<!-- ========== FILTRO POR CATEGORÍA ========== -->
+<section class="container mb-4">
+    <button class="btn btn-primary me-2 mb-2 filtro-categoria" data-categoria="Todos">
+        Todos
+    </button>
+
+    <button class="btn btn-primary me-2 mb-2 filtro-categoria" data-categoria="Desarrollo Web">
+        Desarrollo Web
+    </button>
+
+    <button class="btn btn-primary mb-2 filtro-categoria" data-categoria="Ciencia de Datos">
+        Ciencia de Datos
+    </button>
+</section>
+
+<!-- ========== CATÁLOGO DE CURSOS ========== -->
 <section class="container mb-5">
-    <h2 class="mb-4">Desarrollo Web</h2>
+    <h2 class="mb-4">Cursos Disponibles</h2>
 
-    <div class="row">
-
-        <!-- CURSO 1 -->
-        <div class="col-md-4 mb-4">
-            <div class="card course-card">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" class="card-img-top" alt="HTML y CSS">
-                <div class="card-body">
-                    <h5>HTML y CSS</h5>
-                    <p><strong>Categoría:</strong> Desarrollo Web</p>
-                    <p>Creación de páginas web modernas y responsivas.</p>
-                    <p><strong>Duración:</strong> 8 semanas</p>
-                    <p class="price">$120</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- CURSO 2 -->
-        <div class="col-md-4 mb-4">
-            <div class="card course-card">
-                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600" class="card-img-top" alt="JavaScript">
-                <div class="card-body">
-                    <h5>JavaScript</h5>
-                    <p><strong>Categoría:</strong> Desarrollo Web</p>
-                    <p>Programación interactiva para sitios web.</p>
-                    <p><strong>Duración:</strong> 10 semanas</p>
-                    <p class="price">$150</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- CURSO 3 -->
-        <div class="col-md-4 mb-4">
-            <div class="card course-card">
-                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600" class="card-img-top" alt="React">
-                <div class="card-body">
-                    <h5>React</h5>
-                    <p><strong>Categoría:</strong> Desarrollo Web</p>
-                    <p>Desarrollo de interfaces modernas para aplicaciones web.</p>
-                    <p><strong>Duración:</strong> 12 semanas</p>
-                    <p class="price">$180</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    <div class="row" id="contenedorCursos"></div>
 </section>
 
-<!-- ========== CIENCIA DE DATOS ========== -->
-<section class="container mb-5">
-    <h2 class="mb-4">Ciencia de Datos</h2>
-
-    <div class="row">
-
-        <!-- CURSO 4 -->
-        <div class="col-md-4 mb-4">
-            <div class="card course-card">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" class="card-img-top" alt="Python">
-                <div class="card-body">
-                    <h5>Python para Datos</h5>
-                    <p><strong>Categoría:</strong> Ciencia de Datos</p>
-                    <p>Análisis y procesamiento de datos con Python.</p>
-                    <p><strong>Duración:</strong> 8 semanas</p>
-                    <p class="price">$160</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- CURSO 5 -->
-        <div class="col-md-4 mb-4">
-            <div class="card course-card">
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600" class="card-img-top" alt="Power BI">
-                <div class="card-body">
-                    <h5>Power BI</h5>
-                    <p><strong>Categoría:</strong> Ciencia de Datos</p>
-                    <p>Creación de reportes y dashboards interactivos.</p>
-                    <p><strong>Duración:</strong> 6 semanas</p>
-                    <p class="price">$130</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- CURSO 6 -->
-        <div class="col-md-4 mb-4">
-            <div class="card course-card">
-                <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600" class="card-img-top" alt="Machine Learning">
-                <div class="card-body">
-                    <h5>Machine Learning</h5>
-                    <p><strong>Categoría:</strong> Ciencia de Datos</p>
-                    <p>Introducción a modelos predictivos e IA.</p>
-                    <p><strong>Duración:</strong> 14 semanas</p>
-                    <p class="price">$220</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
- <!-- ========== FOOTER ========== -->
-  <footer class="footer-section">
+<!-- ========== FOOTER ========== -->
+<footer class="footer-section">
     <div class="container">
-      <div class="row">
-        <div id="social">
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" height="24"></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Twitter" width="24" height="24"></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="Instagram" width="24" height="24"></a>
-       </div>
-      <p>&copy; 2026 Go Tech. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+        <div class="row">
+            <div id="social">
+                <a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                         alt="Facebook"
+                         width="24"
+                         height="24">
+                </a>
 
-  <script src="./js/bootstrap.bundle.min.js"></script>
+                <a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png"
+                         alt="Twitter"
+                         width="24"
+                         height="24">
+                </a>
+
+                <a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png"
+                         alt="Instagram"
+                         width="24"
+                         height="24">
+                </a>
+            </div>
+
+            <p>&copy; 2026 Go Tech. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/cursos.js"></script>
+
 </body>
 </html>
