@@ -22,9 +22,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
-          <li class="nav-item"><a class="nav-link" href="profesores.html">Profesores</a></li>
+          <li class="nav-item"><a class="nav-link active" href="profesores.html">Profesores</a></li>
           <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
       </div>
@@ -45,95 +45,24 @@
         
         <!-- Tarjetas de profesores -->
         <section id="profesores" class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="profesor">
-                        <img src="./images/profesor1.jpg"
-                            alt="Profesor de programación">
-                        <h2>Leonardo Moscoa</h2>
-                        <h3>Programación Web</h3>
-                        <p>
-                            Dedicado al desarrollo web y con experiencia en tecnologías de
-                            diseño para aplicaciones.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="profesor">
-                        <img src="./images/profesor2.jpg"
-                            alt="Profesor de Ingeniería Robótica">
-                        <h2>Eliécer Mendoza</h2>
-                        <h3>Ingeniería Robótica</h3>
-                        <p>
-                            Dedicado a la creación y programación de sistemas autónomos a
-                            nivel industrial y en el hogar.
-                        </p>
-                    </div>
-                </div>
-
-               <div class="col-md-6 col-lg-4">
-                    <div class="profesor">
-                        <img src="./images/profesor3.jpg"
-                            alt="Profesor de Ciberseguridad">
-                        <h2>Sebastian Solano</h2>
-                        <h3>Ciberseguridad</h3>
-                        <p>
-                            Dedicado a proteger información privada, blindar redes y 
-                            defender sistemas informáticos contra posibles hackeos.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="profesor">
-                        <img src="./images/profesor4.jpg"
-                            alt="Profesor de Desarrollo de Software">
-                        <h2>Mauricio Moreira</h2>
-                        <h3>Desarrollo de Software</h3>
-                        <p>
-                            Dedicado al diseño, programación y mantenimiento de 
-                            aplicaciones, sistemas operativos y programas informáticos.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Misión y visión -->
-        <section id="mision-vision">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="mision">
-                            <h2>Misión</h2>
-                            <p>
-                                Queremos dar la mejor educación ofreciendo cursos
-                                impartidos por profesionales para fortalecer el 
-                                desarrollo académico de todos nuestros estudiantes.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="vision">
-                            <h2>Visión</h2>
-                            <p>
-                                Ser una academia capaz de formar
-                                estudiantes destacados para entrar al
-                                mundo laboral.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
+             <div class="row" id="listaProfesores">
+             </div>
         </section>
 
     </main>
+
+    <!-- ========== MODAL ========== -->
+    <div id="modalProfesor" class="modal-profesor">
+        <div class="modal-contenido">
+            <span id="cerrarModal">&times;</span>
+            <img id="modalFoto" src="" alt="Foto">
+            <h2 id="modalNombre"></h2>
+            <h3 id="modalEspecialidad"></h3>
+            <p id="modalDescripcion"></p>
+            <p id="modalCorreo"></p>
+            <p id="modalCursos"></p>
+        </div>
+    </div>
 
    <!-- ========== FOOTER ========== -->
   <footer class="footer-section">
@@ -148,5 +77,7 @@
     </div>
   </footer>
   <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/profesores.js"></script>
+
 </body>
 </html>
