@@ -2,7 +2,7 @@
 
 require_once 'config/database.php';
 
-$controllerName = $_GET['controller'] ?? 'tareas';
+$controllerName = $_GET['controller'] ?? 'Index';
 $action         = $_GET['action']     ?? 'index';
 $method         = $_SERVER['REQUEST_METHOD'];
 $id             = isset($_GET['id']) ? (int) $_GET['id'] : null;

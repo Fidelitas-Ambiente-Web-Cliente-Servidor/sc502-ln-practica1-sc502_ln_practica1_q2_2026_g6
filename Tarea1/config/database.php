@@ -2,8 +2,8 @@
 class Database
 {
 
-    private static string $host     = 'db';          
-    private static string $dbname   = 'tareas_db'; 
+    private static string $host     = 'host.docker.internal';          
+    private static string $dbname   = 'Tarea3'; 
     private static string $user     = 'root';
     private static string $password = 'root';
 
@@ -16,6 +16,7 @@ class Database
     {
         if (self::$instance === null) {
             $dsn = "mysql:host=" . self::$host
+                 . ";port=3307"
                  . ";dbname="    . self::$dbname
                  . ";charset=utf8mb4";
 

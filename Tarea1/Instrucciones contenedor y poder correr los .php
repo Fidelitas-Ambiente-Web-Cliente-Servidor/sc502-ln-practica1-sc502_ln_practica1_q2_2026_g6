@@ -1,0 +1,18 @@
+
+1.CREAR CONTENEDOR TEMPORAL CON APACHE PARA ABRIR ARCHIVOS .PHP EJECUTAR EL COMANDO EN LA CARPETA RAIZ DE LA TAREA O PROYECTO
+
+docker run --rm -d -p 8085:80 --name php-rapido --add-host=host.docker.internal:host-gateway -v "${PWD}:/var/www/html" php:8.2-apache
+
+2. INSTALARLE AL CONTENEDOR (AL APACHE) EL DRIVER PARA PODER ACCCEDER A LA BASE DE DATOS EN DOCKER DESKTOP
+
+docker exec -i php-rapido sh -c "docker-php-ext-install pdo pdo_mysql mysqli 
+
+y LUEGO REINICIAR EL CONTENEDOR DESDE EL DOCKER DESKTOP
+
+
+3.CORRER EL PROYECTO EN EL NAVEGADOR CON LA RUTA: http://localhost:8085/     (lleva a la pagina index, ya de ahi por el menu se puede navegar a las demas paginas)
+
+
+
+DETENER EL CONTENEDOR DESPUES DE HABERLO USADO, EJECUTAR EL SIGUIENTE COMANDO EN LA RUTA DONDE EJECUTARON EL PRIMER COMANDO  o PUEDEN DETENER EL CONTENEDOR DESDE EL DOCKER DESKTOP TAMBIEN:
+docker stop php-rapido

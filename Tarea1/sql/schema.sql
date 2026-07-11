@@ -1,0 +1,51 @@
+-- CREAR BD PARA mySQL
+CREATE DATABASE IF NOT EXISTS Tarea3;
+
+USE Tarea3;
+
+-- CREAR TABLA DE CURSOS para MySQL (se muestra el contenido de esta tabla en index.php y en cursos.php)
+CREATE TABLE IF NOT EXISTS cursos_destacados (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion TEXT,
+    categoria VARCHAR(50),
+    duracion INT,
+    precio DECIMAL(10, 2) NOT NULL,
+    imagen VARCHAR(255)
+);
+
+-- INSERTS DE PRUEBA PARA LA TABLA DE CURSOS
+INSERT INTO cursos_destacados (nombre, descripcion, categoria, duracion, precio, imagen) VALUES (
+    "Técnico en programación web",
+    "Aprende HTML, CSS, JavaScript y frameworks modernos para construir aplicaciones web completas desde cero.",
+    "Desarrollo Web",
+    6,
+    499.99,
+    "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=600&h=400&fit=crop"
+);
+INSERT INTO cursos_destacados (nombre, descripcion, categoria, duracion, precio, imagen) VALUES (
+    "Técnico en Ciencia de datos",
+    "Explora el mundo de la ciencia de datos con Python, R y herramientas de análisis para descubrir patrones y tomar decisiones informadas.",
+    "Ciencia de Datos",
+    8,
+    599.99,
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
+);
+INSERT INTO cursos_destacados (nombre, descripcion, categoria, duracion, precio, imagen) VALUES (
+    "Técnico en diseño UX/UI",
+    "Crea experiencias digitales memorables con principios de diseño centrado en el usuario y prototipado interactivo.",
+    "Diseño UX/UI",
+    5,
+    399.99,
+    "https://img.freepik.com/free-vector/gradient-ui-ux-landing-page_52683-69729.jpg?semt=ais_hybrid&w=740&q=80"
+);
+INSERT INTO cursos_destacados (nombre, descripcion, categoria, duracion, precio, imagen) VALUES (
+    "Técnico en ciberseguridad",
+    "Aprende a proteger sistemas y redes contra amenazas cibernéticas, desarrollando habilidades en análisis de riesgos y respuesta a incidentes.",
+    "Ciberseguridad",
+    8,
+    599.99,
+    "https://images.unsplash.com/photo-1550745264-83ff1d0d1e6a?w=600&h=400&fit=crop"
+);
+
+--CONTINUACION DE OTRAS TABLAS
