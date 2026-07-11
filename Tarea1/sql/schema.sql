@@ -48,4 +48,28 @@ INSERT INTO cursos_destacados (nombre, descripcion, categoria, duracion, precio,
     "https://images.unsplash.com/photo-1550745264-83ff1d0d1e6a?w=600&h=400&fit=crop"
 );
 
---CONTINUACION DE OTRAS TABLAS
+-- CONTINUACION DE OTRAS TABLAS
+
+
+
+
+-- PÁGINA CONTACTO
+-- CREACIÓN DE TABLA CONTACTO
+CREATE TABLE IF NOT EXISTS contactos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(100) NOT NULL,
+    telefono VARCHAR(20) NOT NULL,
+    asunto VARCHAR(200) NOT NULL,
+    mensaje TEXT NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- INSERTS DE PRUEBA PARA LA TABLA DE CONTACTO
+INSERT INTO contactos (nombre, correo, telefono, asunto, mensaje) 
+VALUES
+    ('Luis Mora',    'luis@gotech.com',  '88001122', 'Información cursos',   'Quisiera saber los precios.'),
+    ('Ana Rojas',    'ana@gotech.com',   '87223344', 'Matrícula',            'Cómo me matriculo?'),
+    ('Jorge Pérez',  'jorge@gotech.com', '86554433', 'Horarios',             'Necesito horarios nocturnos.'),
+    ('María Salas',  'maria@gotech.com', '85112233', 'Beca',                 'Tienen becas disponibles?'),
+    ('David Núñez',  'david@gotech.com', '84998877', 'Consulta técnica',     'Tengo problemas para acceder.');

@@ -11,6 +11,9 @@
     </div>
   </footer>
 
-  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="/sc502-ln-practica1-sc502_ln_practica1_q2_2026_g6/Tarea1/js/bootstrap.bundle.min.js"></script>
+  <?php if (!empty($pageJS)): ?>
+  <script src="/sc502-ln-practica1-sc502_ln_practica1_q2_2026_g6/Tarea1/js/<?= $pageJS ?>"></script>
+  <?php endif; ?>
 </body>
 </html>
