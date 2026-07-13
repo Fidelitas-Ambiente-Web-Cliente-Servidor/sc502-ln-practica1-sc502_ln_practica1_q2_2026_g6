@@ -3,7 +3,7 @@
 $pageTitle = 'Profesores - Go Tech';
 $pageCSS   = 'profesores.css';
 
-require __DIR__ . '/../../views/layout/header.php';
+require __DIR__ . '/../layout/header.php';
 ?>
 
 <!-- Si el profesor no existe, manda error -->
@@ -61,4 +61,4 @@ require __DIR__ . '/../../views/layout/header.php';
     </div>
   <?php endif; ?>
 </section>
-<?php require __DIR__ . '/../../views/layout/footer.php'; ?>
+<?php require __DIR__ .'/../layout/footer.php'; ?>

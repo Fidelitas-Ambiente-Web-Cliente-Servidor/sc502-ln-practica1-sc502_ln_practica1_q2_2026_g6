@@ -3,14 +3,14 @@
 $pageTitle = 'Detalle del profesor - Go Tech';
 $pageCSS   = 'profesores.css';
 
-require __DIR__ . '/../../views/layout/header.php';
+require __DIR__ . '/../layout/header.php';
 ?>
 
 <!-- ========== ENCABEZADO DE LA PÁGINA ========== -->
 <header class="page-header">
   <div class="container">
     <h1>Detalle del profesor</h1>
-    <p>Más información a detalle.</p>
+    <p>Aquí se muestran más datos del profesor.</p>
   </div>
 </header>
 
@@ -32,4 +32,4 @@ require __DIR__ . '/../../views/layout/header.php';
   </div>
 </section>
 
-<?php require __DIR__ . '/../../views/layout/footer.php'; ?>
+<?php require __DIR__ . '/../layout/footer.php'; ?>

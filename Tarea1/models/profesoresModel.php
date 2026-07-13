@@ -15,7 +15,7 @@ class ProfesorModel
     // Leer todos los profesores activos
     public function getAll(): array
     {
-        $stmt = $this->db->query('SELECT * FROM profesoresWHERE activo = 1ORDER BY id ASC');
+        $stmt = $this->db->query('SELECT * FROM profesores WHERE activo = 1 ORDER BY id ASC');
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 

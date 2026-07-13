@@ -62,6 +62,12 @@ switch ($action) {
         }
         break;
 
+    case 'show':
+        if ($method === 'GET' && $id) {
+            $controller->show($id);
+        }
+        break;
+
     default:
         http_response_code(404);
         die('<h2>404 — Acción no encontrada</h2>');

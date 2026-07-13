@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../models/ProfesorModel.php';
+require_once __DIR__ . '/../models/profesoresModel.php';
 
 class ProfesoresController
 {

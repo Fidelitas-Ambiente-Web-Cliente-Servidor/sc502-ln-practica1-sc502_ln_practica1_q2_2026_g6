@@ -99,13 +99,13 @@ VALUES
 INSERT INTO profesores
 (nombre, especialidad, bio, foto, activo)
 VALUES
-('Leonardo Moscoa','Desarrollo Web','Dedicado en desarrollar sitios web utilizando HTML, CSS y JavaScript.','images/profesor1.jpg',
+('Leonardo Moscoa','Desarrollo Web','Dedicado en desarrollar sitios web utilizando HTML, CSS y JavaScript.','/images/profesor1.jpg',
 TRUE),
-('Eliécer Mendoza','Desarrollo de Interfaz','Dedicado en la creación de interfaces web y aplicaciones por medio de React.','images/profesor2.jpg',
+('Eliécer Mendoza','Desarrollo de Interfaz','Dedicado en la creación de interfaces web y aplicaciones por medio de React.','/images/profesor2.jpg',
 TRUE),
-('Sebastian Solano','Ciencia de Datos','Dedicado al análisis de datos, modelos predictivos y uso de Python.','images/profesor3.jpg',
+('Sebastian Solano','Ciencia de Datos','Dedicado al análisis de datos, modelos predictivos y uso de Python.','/images/profesor3.jpg',
 TRUE),
-('Mauricio Moreira','Análisis de Datos','Dedicado en la creación de reportes y dashboards utilizando Power BI.','images/profesor4.jpg',
+('Mauricio Moreira','Análisis de Datos','Dedicado en la creación de reportes y dashboards utilizando Power BI.','/images/profesor4.jpg',
 TRUE),
-('Profesor de prueba','Prueba','Registro de prueba.','images/profesor4.jpg',
+('Profesor de prueba','Prueba','Registro de prueba.','/images/profesor4.jpg',
 FALSE);
