@@ -65,6 +65,18 @@ CREATE TABLE IF NOT EXISTS contactos (
     fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- PÁGINA PROFESORES
+-- CREACIÓN DE LA TABLA PROFESORES
+CREATE TABLE IF NOT EXISTS profesores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    especialidad VARCHAR(100) NOT NULL,
+    bio TEXT NOT NULL,
+    foto VARCHAR(255) NOT NULL,
+    activo BOOLEAN NOT NULL DEFAULT TRUE
+);
+
+
 -- INSERTS DE PRUEBA PARA LA TABLA DE CONTACTO
 INSERT INTO contactos (nombre, correo, telefono, asunto, mensaje) 
 VALUES
@@ -73,3 +85,19 @@ VALUES
     ('Jorge Pérez',  'jorge@gotech.com', '86554433', 'Horarios',             'Necesito horarios nocturnos.'),
     ('María Salas',  'maria@gotech.com', '85112233', 'Beca',                 'Tienen becas disponibles?'),
     ('David Núñez',  'david@gotech.com', '84998877', 'Consulta técnica',     'Tengo problemas para acceder.');
+
+
+-- INSERTS DE PRUEBA PARA LA TABLA PROFESORES
+INSERT INTO profesores
+(nombre, especialidad, bio, foto, activo)
+VALUES
+('Leonardo Moscoa','Desarrollo Web','Dedicado en desarrollar sitios web utilizando HTML, CSS y JavaScript.','images/profesor1.jpg',
+TRUE),
+('Eliécer Mendoza','Desarrollo de Interfaz','Dedicado en la creación de interfaces web y aplicaciones por medio de React.','images/profesor2.jpg',
+TRUE),
+('Sebastian Solano','Ciencia de Datos','Dedicado al análisis de datos, modelos predictivos y uso de Python.','images/profesor3.jpg',
+TRUE),
+('Mauricio Moreira','Análisis de Datos','Dedicado en la creación de reportes y dashboards utilizando Power BI.','images/profesor4.jpg',
+TRUE),
+('Profesor de prueba','Prueba','Registro de prueba.','images/profesor4.jpg',
+FALSE);
