@@ -1,0 +1,39 @@
+services:
+  web:
+    build: .  # construye usando tu Dockerfile local
+    container_name: php-apache-tarea  # Nombre único de container para la tarea
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html  # <--- Mapea la raíz actual (donde están tus archivos php)
+    depends_on:
+      - db
+ 
+  db:
+    image: mysql:8.0
+    container_name: mysql-tarea  # Nombre único de container para la base de datos
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root  # password para el usuario root
+      MYSQL_DATABASE: Tarea3     # nombre de la base de datos
+      MYSQL_USER: TareaUser       # usuario para la base de datos
+      MYSQL_PASSWORD: Tareass   # contraseña para el usuario de la base de datos
+    volumes:
+      - db_data_tarea:/var/lib/mysql
+    ports:
+      - "3307:3306"
+ 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin-tarea  # nombre único de container para phpMyAdmin
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root  #coincidir con MYSQL_ROOT_PASSWORD
+    ports:
+      - "8082:80"
+
+volumes:
+  db_data_tarea:  # Nombre único para el volumen de datos debe coincidir con el volumen definido en el servicio db

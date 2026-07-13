@@ -11,9 +11,9 @@
     </div>
   </footer>
 
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="<?= $basePath ?>js/bootstrap.bundle.min.js"></script>
   <?php if (!empty($pageJS)): ?>
-  <script src="js/<?= $pageJS ?>"></script>
+  <script src="<?= $basePath ?>js/<?= htmlspecialchars($pageJS) ?>"></script>
   <?php endif; ?>
 </body>
 </html>

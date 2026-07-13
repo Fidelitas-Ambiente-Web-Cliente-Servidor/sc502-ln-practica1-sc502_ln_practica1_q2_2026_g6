@@ -45,7 +45,15 @@ INSERT INTO cursos_destacados (nombre, descripcion, categoria, duracion, precio,
     "Ciberseguridad",
     8,
     599.99,
-    "https://images.unsplash.com/photo-1550745264-83ff1d0d1e6a?w=600&h=400&fit=crop"
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYVBtdHjzBr17zVcGQNXAmnBctysUu-UGoTSWUyVzw1w&s"
+);
+INSERT INTO cursos_destacados (nombre, descripcion, categoria, duracion, precio, imagen) VALUES (
+    "Técnico en Inteligencia Artificial",
+    "Explora el mundo de la IA y aprende a desarrollar modelos de aprendizaje automático y redes neuronales para resolver problemas complejos.",
+    "Inteligencia Artificial",
+    10,
+    699.99,
+    "https://ailabschool.com/wp-content/uploads/2023/04/4RVXC7TM7FDDLKRTPB5AEU7RAA.jpg"
 );
 
 -- CONTINUACION DE OTRAS TABLAS
