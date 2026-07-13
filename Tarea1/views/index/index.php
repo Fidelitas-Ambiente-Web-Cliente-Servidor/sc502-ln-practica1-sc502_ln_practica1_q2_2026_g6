@@ -3,6 +3,14 @@
 $pageTitle = 'Inicio - Academia Go Tech';
 $pageCSS   = 'index.css';
 $depth = 0;
+
+$basePath = dirname($_SERVER['SCRIPT_NAME']);
+if ($basePath === '/' || $basePath === '\\') {
+    $basePath = '/';
+} else {
+    $basePath = rtrim($basePath, '/\\') . '/';
+}
+
 require __DIR__ . '/../layout/header.php';
 ?>
 
@@ -11,7 +19,7 @@ require __DIR__ . '/../layout/header.php';
     <div class="container">
       <h1>Go Tech</h1>
       <p>Transformando mentes, construyendo el futuro con educación de excelencia para todos.</p>
-      <a href="cursos.html" class="btn">Comienza hoy</a>
+      <a href="<?= $basePath ?>?controller=cursos&action=index" class="btn">Comienza hoy</a>
     </div>
   </header>
 
@@ -36,7 +44,7 @@ require __DIR__ . '/../layout/header.php';
                         <small class="text-muted"><?= htmlspecialchars($curso['categoria']) ?></small>
                     </div>
                     <div>
-                        <a href="cursos.html" class="btn btn-custom">Ver más</a>
+                        <a href="<?= $basePath ?>?controller=cursos&action=index" class="btn btn-custom">Ver más</a>
                     </div>
               </div>
             </div>

@@ -1,4 +1,8 @@
 <?php
+/*
+echo 'REQUEST_URI: ' . ($_SERVER['REQUEST_URI'] ?? 'Ninguno') . '<br>';
+echo 'QUERY_STRING: ' . ($_SERVER['QUERY_STRING'] ?? 'Ninguno') . '<br>';
+echo 'URL completa: ' . (isset($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . '<br>';*/
 
 require_once 'config/database.php';
 

@@ -20,7 +20,7 @@ if ($basePath === '/' || $basePath === '\\') {
   <!-- ========== NAVBAR ========== -->
   <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="<?= $basePath ?>">
+      <a class="navbar-brand" href="<?= $basePath ?>?controller=index&action=index">
         <img src="<?= $basePath ?>images/technology.png" alt="Go Tech">
         Go Tech
       </a>
@@ -29,7 +29,7 @@ if ($basePath === '/' || $basePath === '\\') {
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="<?= $basePath ?>">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?= $basePath ?>?controller=index&action=index">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="<?= $basePath ?>?controller=cursos&action=index">Cursos</a></li>
           <li class="nav-item"><a class="nav-link" href="<?= $basePath ?>?controller=profesores&action=index">Profesores</a></li>
           <li class="nav-item"><a class="nav-link" href="<?= $basePath ?>?controller=contacto&action=create">Contacto</a></li>
