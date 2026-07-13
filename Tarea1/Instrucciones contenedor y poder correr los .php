@@ -5,7 +5,7 @@ docker run --rm -d -p 8085:80 --name php-rapido --add-host=host.docker.internal:
 
 2. INSTALARLE AL CONTENEDOR (AL APACHE) EL DRIVER PARA PODER ACCCEDER A LA BASE DE DATOS EN DOCKER DESKTOP
 
-docker exec -i php-rapido sh -c "docker-php-ext-install pdo pdo_mysql mysqli 
+docker-php-ext-install mysqli pdo pdo_mysql mysqli
 
 y LUEGO REINICIAR EL CONTENEDOR DESDE EL DOCKER DESKTOP
 

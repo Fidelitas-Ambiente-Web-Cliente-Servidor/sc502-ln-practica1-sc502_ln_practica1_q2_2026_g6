@@ -1,6 +1,7 @@
 <?php
 
 $pageTitle = 'Inicio - Academia Go Tech';
+$pageCSS   = 'index.css';
 $depth = 0;
 require __DIR__ . '/../layout/header.php';
 ?>
