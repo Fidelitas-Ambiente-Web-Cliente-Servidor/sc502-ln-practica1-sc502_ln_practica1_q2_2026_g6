@@ -1,3 +1,4 @@
+/*
 const cursos = [
     {
         nombre: "HTML y CSS",

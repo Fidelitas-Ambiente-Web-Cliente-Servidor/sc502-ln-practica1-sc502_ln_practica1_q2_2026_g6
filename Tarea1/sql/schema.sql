@@ -56,6 +56,80 @@ INSERT INTO cursos_destacados (nombre, descripcion, categoria, duracion, precio,
     "https://ailabschool.com/wp-content/uploads/2023/04/4RVXC7TM7FDDLKRTPB5AEU7RAA.jpg"
 );
 
+-- PÁGINA DE CURSOS
+-- CREACIÓN DE LA TABLA CURSOS
+CREATE TABLE IF NOT EXISTS cursos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion TEXT NOT NULL,
+    categoria VARCHAR(50) NOT NULL,
+    duracion INT NOT NULL,
+    precio DECIMAL(10, 2) NOT NULL,
+    imagen VARCHAR(500) NOT NULL,
+    disponible BOOLEAN NOT NULL DEFAULT TRUE
+);
+
+-- INSERTS PARA LA TABLA DE CURSOS
+INSERT INTO cursos (nombre, descripcion, categoria, duracion, precio, imagen, disponible) VALUES (
+    "HTML y CSS",
+    "Creación de páginas web modernas y responsivas.",
+    "Desarrollo Web",
+    8,
+    120.00,
+    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600",
+    TRUE
+);
+
+INSERT INTO cursos (nombre, descripcion, categoria, duracion, precio, imagen, disponible) VALUES (
+    "JavaScript",
+    "Programación interactiva para sitios web.",
+    "Desarrollo Web",
+    10,
+    150.00,
+    "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600",
+    TRUE
+);
+
+INSERT INTO cursos (nombre, descripcion, categoria, duracion, precio, imagen, disponible) VALUES (
+    "React",
+    "Desarrollo de interfaces modernas para aplicaciones web.",
+    "Desarrollo Web",
+    12,
+    180.00,
+    "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600",
+    TRUE
+);
+
+INSERT INTO cursos (nombre, descripcion, categoria, duracion, precio, imagen, disponible) VALUES (
+    "Python para Datos",
+    "Análisis y procesamiento de datos utilizando Python.",
+    "Ciencia de Datos",
+    8,
+    160.00,
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600",
+    TRUE
+);
+
+INSERT INTO cursos (nombre, descripcion, categoria, duracion, precio, imagen, disponible) VALUES (
+    "Power BI",
+    "Creación de reportes y paneles de información interactivos.",
+    "Ciencia de Datos",
+    6,
+    130.00,
+    "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600",
+    TRUE
+);
+
+INSERT INTO cursos (nombre, descripcion, categoria, duracion, precio, imagen, disponible) VALUES (
+    "Machine Learning",
+    "Introducción a modelos predictivos e inteligencia artificial.",
+    "Ciencia de Datos",
+    14,
+    220.00,
+    "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600",
+    TRUE
+);
+
 -- CONTINUACION DE OTRAS TABLAS
 
 
